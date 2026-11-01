@@ -1,0 +1,377 @@
+{
+  "CarbLoading": {
+    "headerCta": "Check out typetwo energy gels! €1 per gel and fully customizable!",
+    "hero": {
+      "title": "Carb loading calculator",
+      "body": "This carb loading calculator tells you how many grams of carbs to eat in the days before your race, day by day. It needs your weight and your expected race time, then a few questions on your gut and your health. It runs in your browser: nothing is saved."
+    },
+    "steps": {
+      "race": "The race",
+      "athlete": "You",
+      "gutDiet": "Gut and diet",
+      "prep": "Preparation",
+      "health": "Health",
+      "progress": "Step {current} of {total}"
+    },
+    "nav": {
+      "back": "Back",
+      "next": "Next",
+      "generate": "Calculate the plan"
+    },
+    "errors": {
+      "summary": "Check the highlighted fields.",
+      "required": "Answer this question.",
+      "range": "Enter a value between {min} and {max}.",
+      "invalid": "Invalid value.",
+      "raceTooSoon": "The race must be tomorrow or later.",
+      "raceTooFar": "Pick a date within {max} days from today.",
+      "sessionAfterRace": "The session must be before race day.",
+      "sessionTooOld": "That is more than {max} days before the race: select \"No hard session\"."
+    },
+    "fields": {
+      "sport": {
+        "label": "Sport",
+        "options": {
+          "cycling": "Cycling",
+          "road_running": "Road running",
+          "trail": "Trail",
+          "swimming": "Swimming",
+          "ocr": "OCR",
+          "triathlon": "Triathlon",
+          "other": "Other"
+        }
+      },
+      "raceDate": {
+        "label": "Race date"
+      },
+      "startTime": {
+        "label": "Start time",
+        "help": "Used for the time of the pre-race meal."
+      },
+      "duration": {
+        "label": "Expected duration",
+        "help": "How long you expect it to take. Over {loadingAboveMin} minutes, carb loading applies.",
+        "hours": "hours",
+        "minutes": "minutes"
+      },
+      "daysSinceLastRace": {
+        "label": "Days since your last race",
+        "help": "Leave empty if you haven't raced in the last {max} days."
+      },
+      "weightKg": {
+        "label": "Body weight (kg)",
+        "help": "Doses are in grams per kg of body weight."
+      },
+      "age": {
+        "label": "Age"
+      },
+      "sex": {
+        "label": "Sex",
+        "help": "It doesn't change the dose. It's only used for some health questions.",
+        "options": {
+          "female": "Female",
+          "male": "Male",
+          "other": "Other"
+        }
+      },
+      "giHistory": {
+        "label": "Gut problems in training or races",
+        "help": "Nausea, vomiting, cramps, bloating or diarrhoea while you train or race.",
+        "options": {
+          "none": "None",
+          "occasional": "Occasional",
+          "frequent": "Frequent"
+        }
+      },
+      "ibsDiagnosed": {
+        "label": "Do you have diagnosed irritable bowel syndrome (IBS)?",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "coeliac": {
+        "label": "Do you have coeliac disease?",
+        "help": "We leave out foods with gluten.",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "lactoseIntolerance": {
+        "label": "Are you lactose intolerant?",
+        "help": "We leave out foods with lactose.",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "usualDiet": {
+        "label": "How do you usually eat?",
+        "options": {
+          "mixed": "Mixed diet",
+          "lchf_keto": "Low carb or ketogenic"
+        }
+      },
+      "loadingDays": {
+        "label": "Carb loading days",
+        "help": "Usually {default}. These are calendar days before the race; race day doesn't count.",
+        "options": {
+          "1": "1 day",
+          "2": "2 days",
+          "3": "3 days"
+        }
+      },
+      "doseLevel": {
+        "label": "Dose",
+        "help": "The standard is the dose used in the most recent studies.",
+        "highDisabled": "The high dose is only available without gut problems.",
+        "options": {
+          "minimum": "Minimum ({minimum} g/kg)",
+          "standard": "Standard ({standard} g/kg)",
+          "high": "High ({high} g/kg)"
+        }
+      },
+      "lastHardSession": {
+        "label": "Last hard session (done or planned)",
+        "help": "Loading starts the next day.",
+        "noneRecent": "No hard session in the last {max} days"
+      },
+      "raceCarbs": {
+        "label": "How many carbs do you plan to take during the race?",
+        "options": {
+          "zero": "None",
+          "1_29": "1–29 g/h",
+          "30_59": "30–59 g/h",
+          "60_89": "60–89 g/h",
+          "90_plus": "90 g/h or more",
+          "dont_know": "I don't know"
+        }
+      },
+      "preMealHours": {
+        "label": "How many hours before the start do you eat the pre-race meal?",
+        "options": {
+          "1": "1 h",
+          "2": "2 h",
+          "3": "3 h",
+          "4": "4 h"
+        }
+      },
+      "bigMealTolerance": {
+        "label": "How do you handle a big meal before exercise?",
+        "help": "With good tolerance and at least {minHours} hours of margin, the meal can be bigger.",
+        "options": {
+          "low": "Badly",
+          "normal": "Normally",
+          "high": "Well"
+        }
+      },
+      "diabetes": {
+        "label": "Do you have diabetes?",
+        "options": {
+          "no": "No",
+          "type_1": "Type 1",
+          "type_2": "Type 2",
+          "other": "Other type"
+        }
+      },
+      "pregnant": {
+        "label": "Are you pregnant?",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "eatingDisorderHistory": {
+        "label": "Have you ever had an eating disorder?",
+        "options": {
+          "no": "No",
+          "yes": "Yes",
+          "prefer_not_to_say": "Prefer not to say"
+        }
+      },
+      "redsOrLowEnergyDiagnosis": {
+        "label": "Have you been diagnosed with RED-S or low energy availability?",
+        "help": "RED-S: relative energy deficiency in sport.",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "amenorrhea3Months": {
+        "label": "Have your periods been absent for 3 months or more, without hormonal contraception?",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      }
+    },
+    "health": {
+      "intro": "Last questions. They help us see whether a plan with grams and calories is right for you. Your answers stay in your browser."
+    },
+    "result": {
+      "heading": "Your plan",
+      "answer": {
+        "yes": "Carb loading: yes",
+        "no": "Carb loading: no",
+        "blocked": "No numeric plan"
+      },
+      "day": {
+        "title": "D−{offset} · {date}",
+        "carbs": "{carbsG} g of carbs · {blocks} blocks of {blockG} g",
+        "kcal": "About {kcal} kcal in total. Add carbs, don't cut protein and fat.",
+        "fibre": {
+          "usual": "Fibre: as usual. The extra grams come from low-fibre foods.",
+          "under_10g": "Fibre: under {lowFibreMaxG} g a day."
+        },
+        "training": "Training: {maxMin} minutes at most, easy.",
+        "recharge": "In the {windowH} h after the session, put about {sharePct}% of the day's carbs: {carbsG} g."
+      },
+      "blocksExplainer": "A block is a portion of food that contains {blockG} g of carbs. The day's total is split into blocks, so you can spread it across meals and snacks: the table below shows how much food makes one block.",
+      "hardSessionLatest": "Last hard session: by {date}.",
+      "carbType": {
+        "mixed": "Mixed diet: any source of carbs works.",
+        "high_gi_half": "With a single loading day, at least {minHighGiBlocks} of the {blocks} blocks from high glycaemic index foods."
+      },
+      "occasions": "Spread the blocks over {min}–{max} occasions across meals and snacks: it helps tolerance.",
+      "fuelUp": "The day before (D−1, {date}): {carbsG} g of carbs, {blocks} blocks of {blockG} g ({gPerKg} g/kg).",
+      "preRace": {
+        "single": "Pre-race meal: {gMin} g of carbs at {time}, {hours} h before the start.",
+        "range": "Pre-race meal: {gMin} to {gMax} g of carbs at {time}, {hours} h before the start.",
+        "previousDay": "(the day before the race)",
+        "composition": "Low in fat, fibre and protein. Add a source of fructose: honey, jam or orange juice.",
+        "usualMealsBefore": "Before the pre-race meal, eat your usual carb-rich meals.",
+        "notCounted": "The pre-race meal is not part of the loading."
+      },
+      "weight": "Possible weight gain of {min}–{max}% (water and gut contents), not fat.",
+      "edit": "Edit answers",
+      "print": "Print",
+      "copy": "Copy as text",
+      "copied": "Plan copied.",
+      "copyFailed": "Copy failed: select the text below and copy it by hand.",
+      "foods": {
+        "heading": "Food examples (1 block = {blockG} g of carbs)",
+        "cols": {
+          "food": "Food",
+          "portion": "Portion for 1 block",
+          "fibre": "Fibre",
+          "cho100": "Carbs per 100 g or 100 ml"
+        },
+        "groups": {
+          "base": "Base of the meals",
+          "low_residue": "Low-fibre extras",
+          "other": "Others"
+        },
+        "badges": {
+          "highGi": "High GI",
+          "fructose": "With fructose",
+          "checkLabel": "Check the label"
+        },
+        "cho100": "{cho100} g per 100 {unit}",
+        "labelSource": "Values from labels: check the one on your product.",
+        "fibreUnknown": "<1 g"
+      }
+    },
+    "reasons": {
+      "LOADING_OVER_90": "The race lasts more than {loadingAboveMin} minutes: carb loading applies.",
+      "FUEL_UP_60_90": "The race lasts between {noTargetBelowMin} and {loadingAboveMin} minutes: no loading. The day before, eat more carbs than usual.",
+      "UNDER_60": "Eat as usual the day before; a pre-race meal isn't needed for an effort under an hour."
+    },
+    "expectation": {
+      "NO_RACE_CARBS": "Without carbs during the race, starting glycogen matters more. This is the scenario where loading showed the biggest benefits.",
+      "PLAUSIBLE": "A plausible benefit, but the most rigorous studies are few.",
+      "DOUBLE_BLIND_NO_BENEFIT": "At 60+ g/h during the race, double-blind studies found no extra benefit from loading. It remains a low-risk precaution if you tolerate it well."
+    },
+    "blocks": {
+      "BLOCK_DIABETES": "With diabetes, carbs and treatment have to be planned together. Plan carb loading with your diabetes specialist.",
+      "BLOCK_MINOR": "The calculator is designed for adults: carb loading studies don't include people under {minAge}. Ask a doctor or a sports dietitian.",
+      "BLOCK_PREGNANCY": "During pregnancy the calculator gives no guidance. Talk to your doctor.",
+      "BLOCK_EATING_DISORDER": "With a history of eating disorders we prefer not to show grams or calories. A professional who knows your history can help you prepare for the race."
+    },
+    "warnings": {
+      "HIGH_DOSE_UNAVAILABLE": "The high dose is only available without gut problems: the plan uses the standard dose ({standard} g/kg).",
+      "SESSION_TOO_CLOSE": "Hard session too close to the race: the plan cuts loading to 1 day.",
+      "DAYS_REDUCED_SESSION": "You asked for {requested} days of loading, but your last hard session is on {sessionDate} and loading starts the next day: the plan uses {effective, plural, one {# day} other {# days}}.",
+      "DAYS_REDUCED_DATE": "Too few days are left before the race for {requested} days of loading: the plan uses {effective, plural, one {# day} other {# days}}.",
+      "IBS": "With irritable bowel syndrome, talk to your doctor before changing your diet. The calculator doesn't set up a low FODMAP diet.",
+      "SPORT_WEAK_EVIDENCE": "Weaker evidence for your sport: almost all carb loading studies are on cycling.",
+      "BACK_TO_BACK_48H": "At 48 h from the previous race, supercompensation doesn't repeat.",
+      "BACK_TO_BACK_UNCERTAIN": "Previous race {days} days ago: the outcome is uncertain.",
+      "ULTRA": "In races this long, what you take during the race matters most.",
+      "LCHF": "If you follow a low carb or ketogenic diet, one high-carb day isn't enough to restore high-intensity performance. Don't change strategy in race week.",
+      "FILTER_GLUTEN": "Coeliac disease: we left out foods with gluten. For packaged products, always check the label.",
+      "FILTER_LACTOSE": "Lactose intolerance: we left out foods with lactose. For biscuits, check the label.",
+      "FILTER_GI": "Sensitive gut: we left out banana and raisins. Also limit wholegrain products, legumes and large amounts of vegetables.",
+      "AGE_LIMITED_DATA": "Limited data above 37 years: the studies don't include older athletes.",
+      "REDS_SUPPORT": "If your relationship with food is hard, you can talk to a professional.",
+      "REDS_DOCTOR": "Talk to your doctor; loading increases energy, it isn't a weight tool.",
+      "trigger": "Why you see this: {label}",
+      "confidence": {
+        "high": "High evidence",
+        "medium": "Medium evidence",
+        "low": "Low evidence",
+        "heuristic": "Rule of thumb"
+      }
+    },
+    "disclaimer": {
+      "heading": "Before you use the plan",
+      "p1": "This is general guidance based on the available studies, not medical advice.",
+      "p2": "The studies are small and mostly on men and cyclists. Individual response varies a lot.",
+      "p3": "If you have a medical condition, talk to your doctor before changing your diet."
+    },
+    "foods": {
+      "pasta": {
+        "name": "Durum wheat pasta (dry)"
+      },
+      "rice": {
+        "name": "White rice (raw)"
+      },
+      "bread": {
+        "name": "White wheat bread"
+      },
+      "rusks": {
+        "name": "Rusks",
+        "note": "Branded ones often have fewer carbs and more fibre: use the label."
+      },
+      "cornflakes": {
+        "name": "Corn flakes",
+        "note": "They often contain barley malt."
+      },
+      "rice_cakes": {
+        "name": "Rice cakes"
+      },
+      "potatoes": {
+        "name": "Potatoes (raw, peeled)"
+      },
+      "dry_biscuits": {
+        "name": "Plain dry biscuits"
+      },
+      "honey": {
+        "name": "Honey"
+      },
+      "jam": {
+        "name": "Jam"
+      },
+      "orange_juice": {
+        "name": "Orange juice"
+      },
+      "banana": {
+        "name": "Banana (flesh)",
+        "note": "About 3 medium bananas."
+      },
+      "raisins": {
+        "name": "Raisins"
+      },
+      "gummies": {
+        "name": "Gummy sweets"
+      },
+      "maltodextrin": {
+        "name": "Maltodextrin powder",
+        "note": "In 500 ml of water."
+      },
+      "sports_drink": {
+        "name": "Sports drink"
+      }
+    }
+  }
+}
